@@ -15,6 +15,18 @@ public class ReLoadCavasSetValue : MonoBehaviour
     {
         switch (gunMount)
         {
+            case 1:
+                gun[0].SetActive(true);
+                gun[1].SetActive(false);
+                gun[2].SetActive(false);
+                gun[3].SetActive(false);
+                gun[4].SetActive(false);
+                realGun[0].SetActive(true);
+                realGun[1].SetActive(false);
+                realGun[2].SetActive(false);
+                realGun[3].SetActive(false);
+                realGun[4].SetActive(false);
+                break;
             case 2:
                 gun[0].SetActive(true);
                 gun[1].SetActive(true);

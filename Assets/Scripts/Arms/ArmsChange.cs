@@ -25,6 +25,9 @@ public class ArmsChange : MonoBehaviour
     [SerializeField] public Image armsTypeLine;
     [SerializeField] public GameObject[] topLine;
 
+    public GameObject topCan;
+    public GameObject gunCan;
+
     void Start()
     {
         for (int i = 0; i < armsTypeImage.Length; i++)
@@ -52,6 +55,8 @@ public class ArmsChange : MonoBehaviour
             {
                 cameraCtrl.distance = 110;
                 cameraCtrl.zoomDistanceLevel = 0;
+                gunCan.SetActive(true);
+                topCan.SetActive(false);
             }
             armsState = ArmsState.HE;
             armsTypeState = ArmsTypeState.MAIN;
@@ -77,6 +82,8 @@ public class ArmsChange : MonoBehaviour
             {
                 cameraCtrl.distance = 110;
                 cameraCtrl.zoomDistanceLevel = 0;
+                gunCan.SetActive(true);
+                topCan.SetActive(false);
             }
             armsState = ArmsState.AP;
             armsTypeState = ArmsTypeState.MAIN;
@@ -91,6 +98,9 @@ public class ArmsChange : MonoBehaviour
             {
                 cameraCtrl.distance = 110;
                 cameraCtrl.zoomDistanceLevel = 0;
+                gunCan.SetActive(false);
+                topCan.SetActive(true);
+
             }
             armsState = ArmsState.TOP;
             armsTypeState = ArmsTypeState.TOP;

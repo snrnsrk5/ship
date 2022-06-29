@@ -9,6 +9,7 @@ public class ArmsShoot : MonoBehaviour
 
     public float gunReLoadTime;
     public float cgunReLoadTime;
+    public float sgunReLoadTime;
     public float[] gunTime;
 
     public float topReLoadTime;
@@ -28,7 +29,7 @@ public class ArmsShoot : MonoBehaviour
     public Transform[] FirePos;
     public Transform[] topPos;
 
-    int num = 0;
+    public int num = 0;
     int topnum = 0;
     bool check = true;
 
@@ -86,7 +87,6 @@ public class ArmsShoot : MonoBehaviour
             }
         }
     }
-
 
     void Shoot()
     {

@@ -17,6 +17,7 @@ public class ShipHPsystem : MonoBehaviour
     public Image hpBar;
 
     public Text died;
+    public Button quit;
     void Awake()
     {
         died.gameObject.SetActive(false);
@@ -67,6 +68,7 @@ public class ShipHPsystem : MonoBehaviour
         if(hp <= 0)
         {
             died.gameObject.SetActive(true);
+            quit.gameObject.SetActive(true);
             Time.timeScale = 0;
         }
     }
@@ -87,5 +89,10 @@ public class ShipHPsystem : MonoBehaviour
             hp = maxHp;
         }
 
+    }
+
+    public void Quits()
+    {
+        Application.Quit();
     }
 }

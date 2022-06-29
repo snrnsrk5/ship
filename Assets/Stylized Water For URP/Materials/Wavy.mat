@@ -165,17 +165,17 @@ Material:
     - _LightingDiffuseColor: {r: 0, g: 0, b: 0, a: 0}
     - _LightingSpecularColor: {r: 0.6367924, g: 0.9305206, b: 1, a: 0}
     - _NormalsMovement: {r: 0.04, g: 2, b: 0, a: 0}
-    - _ShoreColor: {r: 0, g: 0.98039216, b: 0.30129027, a: 0}
+    - _ShoreColor: {r: 0, g: 0.98039216, b: 0.30128396, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SurfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.6509804}
     - _SurfaceFoamColor2: {r: 1, g: 0, b: 0, a: 0}
     - _SurfaceFoamMovement: {r: 0.7, g: 0.025, b: 0.835, a: 0.01}
     - _SurfaceFoamSampling: {r: 0.071, g: 0, b: 0, a: 0}
     - _SurfaceFoamTilingAndOffset: {r: -1, g: -1, b: 2, a: 2}
-    - _WaterColorDeep: {r: 0.01176471, g: 0.28560397, b: 0.50980073, a: 1}
-    - _WaterColorHorizon: {r: 0.036889452, g: 0.3370034, b: 0.72305536, a: 1}
+    - _WaterColorDeep: {r: 0.01176471, g: 0.28559765, b: 0.50980073, a: 1}
+    - _WaterColorHorizon: {r: 0.036889452, g: 0.3369971, b: 0.72305536, a: 1}
     - _WaterColorShallow: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-    - _WaterColorUnderwater: {r: 0.20328602, g: 0.30913338, b: 0.517647, a: 1}
+    - _WaterColorUnderwater: {r: 0.20328003, g: 0.30912706, b: 0.517647, a: 1}
     - _WaveColor: {r: 0, g: 0, b: 0, a: 0}
     - _WaveDirections: {r: 1, g: 1, b: 1, a: 1}
     - _WaveVisuals: {r: 0.1, g: 5, b: 0.5, a: 0}

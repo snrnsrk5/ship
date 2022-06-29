@@ -9,16 +9,23 @@ public class RandomSpawn : MonoBehaviour
     int enmey = 1;
     void SpawnEnemy()
     {
-        float randomX = Random.Range(-1000f, 1000f); //적이 나타날 X좌표를 랜덤으로 생성해 줍니다.
-        float randomY = Random.Range(-1000f, 1000f); //적이 나타날 Y좌표를 랜덤으로 생성해 줍니다.
+        float randomX = Random.Range(-5000f, 5000f); //적이 나타날 X좌표를 랜덤으로 생성해 줍니다.
+        float randomY = Random.Range(-5000f, 5000f); //적이 나타날 Y좌표를 랜덤으로 생성해 줍니다.
         if (enableSpawn)
         {
-            GameObject enemy = (GameObject)Instantiate(Enemy, new Vector3(randomX, 7.5f, randomY), Quaternion.identity); //랜덤한 위치와, 화면 제일 위에서 Enemy를 하나 생성해줍니다.
+            if(-1000 < randomX && randomX > 1000 && -1000 < randomY && randomX > 1000 )
+            {
+            
+            }
+            else
+            {
+                GameObject enemy = (GameObject)Instantiate(Enemy, new Vector3(randomX, 7.5f, randomY), Quaternion.identity);
+            }
         }
     }
 
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", 3, 1); //3초후 부터, SpawnEnemy함수를 1초마다 반복해서 실행 시킵니다.
+        InvokeRepeating("SpawnEnemy", 3, 0.5f); //3초후 부터, SpawnEnemy함수를 1초마다 반복해서 실행 시킵니다.
     }
 }

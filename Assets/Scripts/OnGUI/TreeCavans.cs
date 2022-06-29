@@ -30,7 +30,7 @@ public class TreeCavans : MonoBehaviour
 
     void Update()
     {
-        if ((int)treeSystem.shipTreeLV < 13)
+        if ((int)treeSystem.shipTreeLV < 14)
         {
             leftName.text = string.Format($"{treeSystem.shipInfoTree[treeSystem.shipTreeLV]}");
             leftHp.text = string.Format($"{treeSystem.shipHPTree[treeSystem.shipTreeLV]}");

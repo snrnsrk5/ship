@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class EnemyKongo : MonoBehaviour
 {
-    int hp = 8000;
+    public int hp = 7000;
+    public ParticleSystem effect;
+    float diedTime = 3;
+
     void Start()
     {
 
@@ -15,13 +18,24 @@ public class EnemyKongo : MonoBehaviour
         if (hp < 0)
         {
             EXPsystem.Instance.exp = 100;
-            Destroy(gameObject);
+            effect.gameObject.SetActive(true);
+
+            //Destroy(gameObject, 5f);
+            TimeDown();
         }
+    }
+
+    void TimeDown()
+    {
+        diedTime -= Time.deltaTime;
+        if(diedTime < 0) { Destroy(gameObject); }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        effect.gameObject.SetActive(true);
+
+        TimeDown();
     }
 
     private void OnTriggerEnter(Collider other)
